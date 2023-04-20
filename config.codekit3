@@ -263,6 +263,49 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/footer\/icn_fb.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/footer\/icn_fb.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/footer\/icn_instagram.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/footer\/icn_instagram.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
+    "\/deploy\/img\/footer\/icn_mobile.png" : {
+      "ft" : 32768,
+      "iS" : 242,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/footer\/icn_mobile.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/footer\/Shape.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/footer\/Shape.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/global\/dior logo.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -373,6 +416,67 @@
       "plM" : 52780316221407,
       "prP" : 0
     },
+    "\/deploy\/img\/Section 4\/christian dior exhibit.jpeg" : {
+      "ft" : 16384,
+      "iS" : 794564,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Section 4\/christian dior exhibit.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Section 4\/dior fashion show (2).jpg" : {
+      "ft" : 16384,
+      "iS" : 242387,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Section 4\/dior fashion show (2).jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Section 4\/dior jisoo shoot.jpeg" : {
+      "ft" : 16384,
+      "iS" : 68476,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Section 4\/dior jisoo shoot.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/Section 4\/dior makeup set.webp" : {
+      "ft" : 8388608,
+      "iS" : 60276,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Section 4\/dior makeup set.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
+    "\/deploy\/img\/Section 4\/models.webp" : {
+      "ft" : 8388608,
+      "iS" : 135468,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Section 4\/models.webp",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-default",
+      "rq" : 75
+    },
     "\/deploy\/index.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -424,11 +528,19 @@
       "oAP" : "\/dev\/content\/section3.html",
       "oF" : 0
     },
-    "\/dev\/global\/footer.kit" : {
+    "\/dev\/content\/section4.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
+      "oAP" : "\/dev\/content\/section4.html",
+      "oF" : 0
+    },
+    "\/dev\/global\/footer.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
       "oAP" : "\/dev\/global\/footer.html",
       "oF" : 0
     },
