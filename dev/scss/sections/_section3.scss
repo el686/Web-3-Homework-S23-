@@ -3,5 +3,11 @@
 ============= */
 
 #section3{
-
-}
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". section3 .";
+        >div {
+            grid-area: section3;
+        }
+    
+    }

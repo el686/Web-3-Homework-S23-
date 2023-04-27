@@ -3,4 +3,20 @@
 ============= */
 
 #section4{
+    ul {
+        li{
+            img{
+width: 100%;
+            }
+            section{
+                display: grid;
+                grid-template-columns: 16px auto 16px;
+                grid-template-areas: ". section4 .";
+                >div{
+                    grid-area: section4;
+
+                }
+            }
+        }
+    }
     }

@@ -412,6 +412,7 @@ header #search > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". section2-aside .";
+  background-color: red;
 }
 #section2 aside > div {
   grid-area: section2-aside;
@@ -420,6 +421,26 @@ header #search > div {
 /* =============
     section3
 ============= */
+#section3 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section3 .";
+}
+#section3 > div {
+  grid-area: section3;
+}
+
 /* =============
     section4
 ============= */
+#section4 ul li img {
+  width: 100%;
+}
+#section4 ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section4 .";
+}
+#section4 ul li section > div {
+  grid-area: section4;
+}
