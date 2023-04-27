@@ -340,7 +340,7 @@ ul li {
 }
 
 .resize-logo {
-  width: 20%;
+  width: 100%;
 }
 
 /* =============
@@ -382,6 +382,22 @@ header > div {
   grid-area: header;
 }
 
+header #logo-nav {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". logo-nav .";
+}
+header #logo-nav > div {
+  grid-area: logo-nav img;
+}
+header #search {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". search .";
+}
+header #search > div {
+  grid-area: search;
+}
 /* =============
     Footer
 ============= */
@@ -392,6 +408,15 @@ header > div {
 /* =============
     Section2
 ============= */
+#section2 aside {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section2-aside .";
+}
+#section2 aside > div {
+  grid-area: section2-aside;
+}
+
 /* =============
     section3
 ============= */

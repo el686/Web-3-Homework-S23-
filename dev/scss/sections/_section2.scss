@@ -2,6 +2,14 @@
     Section2
 ============= */
 
-#about{
-    
+#section2{
+    aside{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". section2-aside .";
+    >div{
+         grid-area: section2-aside;
+         
+        }
+    }
 }
