@@ -2,6 +2,17 @@
     Base
 ============= */
 
+ul{
+    padding: 0;
+    margin: 0;
+    li{
+        list-style: none;
+    }
+}
+
 .large-images{
     width: 100%;
+}
+.resize-logo{
+    width: 20%;
 }

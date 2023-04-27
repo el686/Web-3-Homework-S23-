@@ -327,8 +327,20 @@ template {
 /* =============
     Base
 ============= */
+ul {
+  padding: 0;
+  margin: 0;
+}
+ul li {
+  list-style: none;
+}
+
 .large-images {
   width: 100%;
+}
+
+.resize-logo {
+  width: 20%;
 }
 
 /* =============
@@ -363,7 +375,7 @@ textarea {
 ============= */
 header {
   display: grid;
-  grid-template-columns: 17px auto;
+  grid-template-columns: 16px auto;
   grid-template-areas: ". header .";
 }
 header > div {
