@@ -340,7 +340,7 @@ ul li {
 }
 
 .resize-logo {
-  width: 100%;
+  width: 100px;
 }
 
 /* =============
@@ -373,22 +373,16 @@ textarea {
 /* =============
     Header
 ============= */
-header {
-  display: grid;
-  grid-template-columns: 16px auto;
-  grid-template-areas: ". header .";
-}
-header > div {
-  grid-area: header;
-}
-
 header #logo-nav {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
 }
 header #logo-nav > div {
-  grid-area: logo-nav img;
+  grid-area: logo-nav;
+}
+header #logo-nav > div img {
+  width: 100px;
 }
 header #search {
   display: grid;

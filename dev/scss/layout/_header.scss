@@ -2,26 +2,16 @@
     Header
 ============= */
 header{
-    display: grid;
-    grid-template-columns: 16px auto;
-    grid-template-areas: '. header .';
 
-    >div{
-        grid-area: header;
-
-    }
-}
-
-header{
     #logo-nav{
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas:". logo-nav .";
-        >div{
-            grid-area: logo-nav
+        >div {
+            grid-area: logo-nav;
             img{
-
-            }
+                width: 100px;
+            }   
         }
     }
 
@@ -46,4 +36,6 @@ header{
         }
     }
 }
+
 }
+
