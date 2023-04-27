@@ -327,6 +327,10 @@ template {
 /* =============
     Base
 ============= */
+.large-images {
+  width: 100%;
+}
+
 /* =============
     Typography
 ============= */
@@ -357,6 +361,15 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 17px auto;
+  grid-template-areas: ". header .";
+}
+header > div {
+  grid-area: header;
+}
+
 /* =============
     Footer
 ============= */
