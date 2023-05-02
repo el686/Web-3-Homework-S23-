@@ -415,10 +415,13 @@ footer > div {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". section2-aside .";
-  background-color: red;
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section2-aside .";
 }
 #section2 aside > div {
   grid-area: section2-aside;
+  background-color: red;
 }
 
 /* =============
