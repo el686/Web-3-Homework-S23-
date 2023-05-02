@@ -408,32 +408,30 @@ footer > div {
     Heroes
 ============= */
 /* ------- Hero2 ------ */
+#sections {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". sections .";
+}
+#sections > div {
+  grid-area: sections;
+  background-color: red;
+  display: grid;
+  grid-template-columns: 70% auto;
+}
+
 /* =============
     Section2
 ============= */
-#section2 aside {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". section2-aside .";
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". section2-aside .";
-}
-#section2 aside > div {
-  grid-area: section2-aside;
+#section2 > div {
   background-color: red;
 }
 
 /* =============
     section3
 ============= */
-#section3 {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". section3 .";
-}
 #section3 > div {
-  grid-area: section3;
+  background-color: red;
 }
 
 /* =============
@@ -449,4 +447,5 @@ footer > div {
 }
 #section4 ul li section > div {
   grid-area: section4;
+  background-color: red;
 }
