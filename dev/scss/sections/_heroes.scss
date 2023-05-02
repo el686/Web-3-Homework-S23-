@@ -10,5 +10,24 @@
 /* ------- Hero2 ------ */
 
 #hero2{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero2 ."; 
 
+    >div{
+        grid-area: hero2;
+        background-color: red
+        
+        ul{
+            @include md{
+                display: grid;
+                grid-template-columns:50% auto;
+           }   
+
+            li:{
+                background: red;
+            }
+        }
+    }
 }
+

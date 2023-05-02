@@ -415,9 +415,13 @@ footer > div {
 }
 #sections > div {
   grid-area: sections;
-  background-color: red;
-  display: grid;
-  grid-template-columns: 70% auto;
+}
+@media (min-width: 768px) {
+  #sections > div {
+    display: grid;
+    grid-template-columns: 70% auto;
+    background-color: red;
+  }
 }
 
 /* =============
@@ -439,11 +443,6 @@ footer > div {
 ============= */
 #section4 ul li img {
   width: 100%;
-}
-#section4 ul li section {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". section4 .";
 }
 #section4 ul li section > div {
   grid-area: section4;
