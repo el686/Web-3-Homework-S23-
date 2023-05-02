@@ -408,6 +408,26 @@ footer > div {
     Heroes
 ============= */
 /* ------- Hero2 ------ */
+#hero2 {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". hero2 .";
+}
+#hero2 > div {
+  grid-area: hero2;
+  background-color: red;
+}
+@media (min-width: 768px) {
+  #hero2 > div ul {
+    display: grid;
+    grid-template-columns: 50% auto;
+    gap: 16px;
+  }
+}
+#hero2 > div ul li {
+  background-color: red;
+}
+
 #sections {
   display: grid;
   grid-template-columns: 16px auto 16px;
