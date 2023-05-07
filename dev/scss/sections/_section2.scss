@@ -4,8 +4,33 @@
 
 #section2{
 
-    >div{
-         background-color: red;
-         
+    
+    section{
+        @include md{
+            display: grid;
+            grid-template-columns: 40% auto;
         }
+
+        @include lg{
+            grid-template-columns: 50% auto;
+        }
+
+        aside{
+            display: grid;
+            grid-template-columns: 16px auto 16px;
+            grid-template-areas: ". section2-aside .";
+            >div{
+                grid-area: section2-aside;
+                 }
+           }
+        
+           #section2-left{
+                background: fuchsia; 
+           }
+
+           #section2-right{
+                background: purple; 
+           }
     }
+
+}

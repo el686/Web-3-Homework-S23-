@@ -5,8 +5,8 @@
 
     >div{
         grid-area: sections;
+        
 @include md{
-
      display: grid;
      grid-template-columns: 70% auto;
      background-color: red;
