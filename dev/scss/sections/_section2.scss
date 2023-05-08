@@ -26,10 +26,16 @@
         
            #section2-left{
                 background: fuchsia; 
+                @include xxl{
+                    grid-template-columns: 20% auto 16px;
+                }
            }
 
            #section2-right{
                 background: purple; 
+                @include xxl{
+                    grid-template-columns: 16 px auto 20%;
+                }
            }
     }
 

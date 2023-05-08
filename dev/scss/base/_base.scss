@@ -10,9 +10,19 @@ ul{
     }
 }
 
-.large-images{
-    width: 100%;
-}
 .resize-logo{
     width: 100px;
 }
+
+.large-images{
+    width: 100%;
+}
+
+.show-large {
+    display: none;
+
+    @include lg{
+        display: block;
+    }
+}
+

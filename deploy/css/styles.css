@@ -335,12 +335,21 @@ ul li {
   list-style: none;
 }
 
+.resize-logo {
+  width: 100px;
+}
+
 .large-images {
   width: 100%;
 }
 
-.resize-logo {
-  width: 100px;
+.show-large {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-large {
+    display: block;
+  }
 }
 
 /* =============
@@ -428,22 +437,6 @@ footer > div {
   background-color: red;
 }
 
-#sections {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". sections .";
-}
-#sections > div {
-  grid-area: sections;
-}
-@media (min-width: 768px) {
-  #sections > div {
-    display: grid;
-    grid-template-columns: 70% auto;
-    background-color: red;
-  }
-}
-
 /* =============
     Section2
 ============= */
@@ -469,15 +462,57 @@ footer > div {
 #section2 section #section2-left {
   background: fuchsia;
 }
+@media (min-width: 1440px) {
+  #section2 section #section2-left {
+    grid-template-columns: 20% auto 16px;
+  }
+}
 #section2 section #section2-right {
   background: purple;
+}
+@media (min-width: 1440px) {
+  #section2 section #section2-right {
+    grid-template-columns: 16 px auto 20%;
+  }
 }
 
 /* =============
     section3
 ============= */
-#section3 > div {
-  background-color: red;
+@media (min-width: 768px) {
+  #section3 section {
+    display: grid;
+    grid-template-columns: 40% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #section3 section {
+    grid-template-columns: 50% auto;
+  }
+}
+#section3 section aside {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section3-aside .";
+}
+#section3 section > div {
+  grid-area: section 3-aside;
+}
+#section3 section3-left {
+  background-color: brown;
+}
+@media (min-width: 1440px) {
+  #section3 section3-left {
+    grid-template-columns: 20% auto 16px;
+  }
+}
+#section3 #section3-right {
+  background-color: sandybrown;
+}
+@media (min-width: 1440px) {
+  #section3 #section3-right {
+    grid-template-columns: 16px auto 20%;
+  }
 }
 
 /* =============
