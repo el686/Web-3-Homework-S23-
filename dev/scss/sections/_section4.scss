@@ -14,8 +14,9 @@
     }
     >div{
         @include md{
-            grid-area: new;
+            grid-area: section4;
         }
+
         ul{
             @include md{
                 display: grid;
@@ -33,6 +34,7 @@
                 "n1 n1 n2 n2 n3 n3"
                 ". n4 n4 n5 n5 .";
             }
+
             li{
                 img{
                     width: 100%;
@@ -45,7 +47,7 @@
                         background: sandybrown;
                         grid-area: section4-content;
     
-                    }
+                    }  
                 }
             }
     
@@ -80,6 +82,4 @@
             }
         }
     }
-
-    
 }

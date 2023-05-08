@@ -419,6 +419,35 @@ footer {
 footer > div {
   grid-area: footer;
 }
+@media (min-width: 768px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: 50% auto;
+    grid-template-areas: "f1 f2" "f1 f3";
+  }
+}
+@media (min-width: 1024px) {
+  footer > div {
+    display: grid;
+    grid-template-columns: repeat 3, 1fr;
+    grid-template-areas: "f1 f2 f3";
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f1 {
+    grid-area: f1;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f2 {
+    grid-area: f2;
+  }
+}
+@media (min-width: 768px) {
+  footer > div #f3 {
+    grid-area: f3;
+  }
+}
 
 /* =============
     Heroes
@@ -568,7 +597,7 @@ footer > div {
 }
 @media (min-width: 768px) {
   #section4 > div {
-    grid-area: new;
+    grid-area: section4;
   }
 }
 @media (min-width: 768px) {
