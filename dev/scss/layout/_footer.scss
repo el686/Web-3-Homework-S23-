@@ -3,9 +3,15 @@
 ============= */
 footer{
     display: grid;
-    grid-template-columns: 16px auto 16 px;
+    grid-template-columns: 16px auto 16px;
     grid-template-areas: ". footer .";
 
+    background-color: #2A3036;
+    color: white;
+
+    @include xxl{
+        grid-template-columns: auto 1200px auto;
+    }
     >div{
         grid-area: footer;
     }

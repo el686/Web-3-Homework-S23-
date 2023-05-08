@@ -406,8 +406,15 @@ header #search > div {
 ============= */
 footer {
   display: grid;
-  grid-template-columns: 16px auto 16 px;
+  grid-template-columns: 16px auto 16px;
   grid-template-areas: ". footer .";
+  background-color: #2A3036;
+  color: white;
+}
+@media (min-width: 1440px) {
+  footer {
+    grid-template-columns: auto 1200px auto;
+  }
 }
 footer > div {
   grid-area: footer;
@@ -547,10 +554,71 @@ footer > div {
 /* =============
     section4
 ============= */
-#section4 ul li img {
+@media (min-width: 768px) {
+  #section4 {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". section4 .";
+  }
+}
+@media (min-width: 1440px) {
+  #section4 {
+    grid-template-columns: auto 1200px auto;
+  }
+}
+@media (min-width: 768px) {
+  #section4 > div {
+    grid-area: new;
+  }
+}
+@media (min-width: 768px) {
+  #section4 > div ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "n1 n1 n2 n2" "n3 n3 n4 n4" ".. n5 n5 ..";
+    gap: 16px;
+  }
+}
+@media (min-width: 1024px) {
+  #section4 > div ul {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
+  }
+}
+#section4 > div ul li img {
   width: 100%;
 }
-#section4 ul li section > div {
-  grid-area: section4;
-  background-color: red;
+#section4 > div ul li section {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". section4-content .";
+}
+#section4 > div ul li section > div {
+  background: sandybrown;
+  grid-area: section4-content;
+}
+@media (min-width: 768px) {
+  #section4 > div ul #n1 {
+    grid-area: n1;
+  }
+}
+@media (min-width: 768px) {
+  #section4 > div ul #n2 {
+    grid-area: n2;
+  }
+}
+@media (min-width: 768px) {
+  #section4 > div ul #n3 {
+    grid-area: n3;
+  }
+}
+@media (min-width: 768px) {
+  #section4 > div ul #n4 {
+    grid-area: n4;
+  }
+}
+@media (min-width: 768px) {
+  #section4 > div ul #n5 {
+    grid-area: n5;
+  }
 }
