@@ -343,11 +343,11 @@ ul li {
   width: 100%;
 }
 
-.show-large {
+.show-extra-large {
   display: none;
 }
-@media (min-width: 1024px) {
-  .show-large {
+@media (min-width: 1440px) {
+  .show-extra-large {
     display: block;
   }
 }
@@ -417,24 +417,53 @@ footer > div {
     Heroes
 ============= */
 /* ------- Hero2 ------ */
-#hero2 {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". hero2 .";
-}
-#hero2 > div {
-  grid-area: hero2;
-  background-color: red;
-}
-@media (min-width: 768px) {
-  #hero2 > div ul {
+@media (min-width: 1024px) {
+  #hero2 {
     display: grid;
-    grid-template-columns: 50% auto;
-    gap: 16px;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". hero2 .";
   }
 }
-#hero2 > div ul li {
-  background-color: red;
+@media (min-width: 1440px) {
+  #hero2 {
+    grid-template-columns: auto 1440px auto;
+  }
+}
+#hero2 ul {
+  display: grid;
+}
+@media (min-width: 768px) {
+  #hero2 ul {
+    grid-template-columns: 50% auto;
+  }
+}
+@media (min-width: 1024px) {
+  #hero2 ul {
+    grid-area: hero2;
+  }
+}
+@media (min-width: 1440px) {
+  #hero2 ul {
+    grid-template-areas: "g1 g2" "g1 g3";
+  }
+}
+#hero2 ul #g1 {
+  background-color: black;
+}
+@media (min-width: 1440px) {
+  #hero2 ul #g1 {
+    grid-area: g1;
+  }
+}
+@media (min-width: 1440px) {
+  #hero2 ul #g2 {
+    grid-area: g2;
+  }
+}
+@media (min-width: 1440px) {
+  #hero2 ul #g3 {
+    grid-area: g3;
+  }
 }
 
 /* =============

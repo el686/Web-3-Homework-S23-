@@ -18,10 +18,10 @@ ul{
     width: 100%;
 }
 
-.show-large {
+.show-extra-large {
     display: none;
 
-    @include lg{
+    @include xxl{
         display: block;
     }
 }
