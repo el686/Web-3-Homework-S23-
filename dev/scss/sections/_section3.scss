@@ -3,7 +3,13 @@
 ============= */
 
 #section3{
-    section{
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". section3 .";
+
+    div{
+        grid-area: section3;
         @include md{
             display: grid;
             grid-template-columns: 40% auto;
@@ -12,25 +18,32 @@
             grid-template-columns: 50% auto;
         }
         
-        aside{
-            display: grid;
-            grid-template-columns: 16px auto 16px;
-            grid-template-areas: ". section3-aside ."}
+        .section3-content{
+            padding: 16px;
+
             >div{
-                grid-area: section 3-aside;
+                display: flex;
+
+                aside{
+                    margin-left: auto;
+                }
             }
         }
-        section3-left{
+
+        #section3-left{
             background-color: brown;
-            @include xxl{
-                grid-template-columns: 20% auto 16px;
-            }
+            padding: 16px;
+            // @include xxl{
+            //     grid-template-columns: 20% auto 16px;
+            // }
         }
         #section3-right{
             background-color: sandybrown;
-            @include xxl{
-                grid-template-columns: 16px auto 20%;
-            }
+            padding: 16px;
+            // @include xxl{
+            //     grid-template-columns: 16px auto 20%;
+            // }
 
         }
     }
+}

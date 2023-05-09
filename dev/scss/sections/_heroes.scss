@@ -1,55 +1,66 @@
 /* =============
     Heroes
 ============= */
-#hero{
-
-}
+#hero {}
 
 
 
 /* ------- Hero2 ------ */
 
-#hero2{
-    @include lg{
+#hero2 {
+    @include lg {
         display: grid;
         grid-template-columns: 16px auto 16px;
         grid-template-areas: ". hero2 .";
     }
-@include xxl{
-    grid-template-columns: auto 1440px auto;
-}
 
-ul{
-    display: grid;
+    @include xxl {
+        grid-template-columns: auto 1440px auto;
+    }
 
-    @include md{
-        grid-template-columns: 50% auto;
-    }
-    @include lg{
-        grid-area: hero2;
-    }
-    @include xxl{
-        grid-template-areas: 
-        "g1 g2"
-        "g1 g3";
-    }
-   
-   #g1 {
-    background-color: black;
-    @include xxl{
-        grid-area: g1;
+    >div {
+        @include lg {
+            grid-area: hero2;
         }
-    }
-    #g2 {
-        @include xxl{
-            grid-area: g2;
+
+        ul {
+            display: grid;
+
+            @include md {
+                grid-template-columns: 50% auto;
+            }
+
+            @include lg {
+                grid-area: hero2;
+            }
+
+            @include xxl {
+                grid-template-areas:
+                    "g1 g2"
+                    "g1 g3";
+            }
+
+            #g1 {
+                background-color: black;
+
+                @include xxl {
+                    grid-area: g1;
+                }
+            }
+
+            #g2 {
+                @include xxl {
+                    grid-area: g2;
+                }
+            }
+
+            #g3 {
+                @include xxl {
+                    grid-area: g3;
+                }
             }
         }
-    
-     #g3 {
-        @include xxl{
-            grid-area: g3;
-            }
-        }
     }
+
+
 }
