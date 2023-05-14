@@ -554,34 +554,34 @@ footer > div {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". section3 .";
 }
-#section3 div {
+#section3 > div {
   grid-area: section3;
 }
 @media (min-width: 768px) {
-  #section3 div {
+  #section3 > div {
     display: grid;
     grid-template-columns: 40% auto;
   }
 }
 @media (min-width: 1024px) {
-  #section3 div {
+  #section3 > div {
     grid-template-columns: 50% auto;
   }
 }
-#section3 div .section3-content {
+#section3 > div .section3-content {
   padding: 16px;
 }
-#section3 div .section3-content > div {
+#section3 > div .section3-content > div {
   display: flex;
 }
-#section3 div .section3-content > div aside {
+#section3 > div .section3-content > div aside {
   margin-left: auto;
 }
-#section3 div #section3-left {
+#section3 > div #section3-left {
   background-color: brown;
   padding: 16px;
 }
-#section3 div #section3-right {
+#section3 > div #section3-right {
   background-color: sandybrown;
   padding: 16px;
 }

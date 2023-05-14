@@ -3,12 +3,11 @@
 ============= */
 
 #section3{
-
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". section3 .";
 
-    div{
+    >div{
         grid-area: section3;
         @include md{
             display: grid;
