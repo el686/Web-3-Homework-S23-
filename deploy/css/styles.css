@@ -386,15 +386,30 @@ textarea {
 /* =============
     Header
 ============= */
-header #logo-nav {
+header {
+  padding: 16px 0;
+}
+@media (min-width: 1440px) {
+  header {
+    padding: 24px 0;
+  }
+}
+header div {
+  display: flex;
+}
+header div #logo-nav {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". logo-nav .";
+  margin-left: auto;
 }
-header #logo-nav > div {
+header div #logo-nav ul {
+  display: flex;
+}
+header div #logo-nav > div {
   grid-area: logo-nav;
 }
-header #logo-nav > div img {
+header div #logo-nav > div img {
   width: 100px;
 }
 header #search {
