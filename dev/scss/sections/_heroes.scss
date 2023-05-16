@@ -2,10 +2,16 @@
     Heroes
 ============= */
 #hero {
-    #bg-image {
+    #bg-img {
         background-image: 
-        img src "img/heroes/dior-hero.jpeg";
-        background-position: center;
+      url("http://esthers-macbook-pro.local:5757/deploy/img/heroes/dior-hero.jpeg");
+        // x || y
+        // x = left | center | right
+        // y = top | center| bottom 
+        background-position: right center;
+        // height: 50%;
+        // height: 100%;
+        // width: 100%;
     }
 }
 

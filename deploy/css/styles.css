@@ -456,9 +456,9 @@ footer > div {
 /* =============
     Heroes
 ============= */
-#hero #bg-image {
-  background-image: img src "img/heroes/dior-hero.jpeg";
-  background-position: center;
+#hero #bg-img {
+  background-image: url("http://esthers-macbook-pro.local:5757/deploy/img/heroes/dior-hero.jpeg");
+  background-position: right center;
 }
 
 /* ------- Hero2 ------ */
