@@ -3,20 +3,25 @@
 ============= */
 
 #section3{
-    display: grid;
-    grid-template-columns: 16px auto 16px;
-    grid-template-areas: ". section3 .";
-
+    @include md{
+        display: grid;
+        grid-template-columns: 16px auto 16px;
+        grid-template-areas: ". section3 .";
+    }
+    @include xxl{
+        grid-template-columns: auto 1200px auto;
+   }
+   
     >div{
-        grid-area: section3;
         @include md{
+            grid-area: section3;
+
             display: grid;
-            grid-template-columns: 40% auto;
+            grid-template-columns: 50% auto;
         }
         @include lg{
             grid-template-columns: 50% auto;
         }
-        
         .section3-content{
             padding: 16px;
 
@@ -32,6 +37,9 @@
         #section3-left{
             background-color: brown;
             padding: 16px;
+            @include xxl{
+                grid-template-columns: 20% auto 16px;
+            }
             // @include xxl{
             //     grid-template-columns: 20% auto 16px;
             // }
@@ -39,6 +47,9 @@
         #section3-right{
             background-color: sandybrown;
             padding: 16px;
+            @include xxl{
+                grid-template-columns: 16px auto 20%;
+            }
             // @include xxl{
             //     grid-template-columns: 16px auto 20%;
             // }

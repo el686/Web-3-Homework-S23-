@@ -352,6 +352,10 @@ ul li {
   }
 }
 
+.hidden {
+  display: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -549,18 +553,23 @@ footer > div {
 /* =============
     section3
 ============= */
-#section3 {
-  display: grid;
-  grid-template-columns: 16px auto 16px;
-  grid-template-areas: ". section3 .";
+@media (min-width: 768px) {
+  #section3 {
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". section3 .";
+  }
 }
-#section3 > div {
-  grid-area: section3;
+@media (min-width: 1440px) {
+  #section3 {
+    grid-template-columns: auto 1200px auto;
+  }
 }
 @media (min-width: 768px) {
   #section3 > div {
+    grid-area: section3;
     display: grid;
-    grid-template-columns: 40% auto;
+    grid-template-columns: 50% auto;
   }
 }
 @media (min-width: 1024px) {
@@ -581,9 +590,19 @@ footer > div {
   background-color: brown;
   padding: 16px;
 }
+@media (min-width: 1440px) {
+  #section3 > div #section3-left {
+    grid-template-columns: 20% auto 16px;
+  }
+}
 #section3 > div #section3-right {
   background-color: sandybrown;
   padding: 16px;
+}
+@media (min-width: 1440px) {
+  #section3 > div #section3-right {
+    grid-template-columns: 16px auto 20%;
+  }
 }
 
 /* =============
