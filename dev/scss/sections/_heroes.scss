@@ -1,7 +1,13 @@
 /* =============
     Heroes
 ============= */
-#hero {}
+#hero {
+    #bg-image {
+        background-image: 
+        img src "img/heroes/dior-hero.jpeg";
+        background-position: center;
+    }
+}
 
 
 

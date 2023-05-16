@@ -456,6 +456,11 @@ footer > div {
 /* =============
     Heroes
 ============= */
+#hero #bg-image {
+  background-image: img src "img/heroes/dior-hero.jpeg";
+  background-position: center;
+}
+
 /* ------- Hero2 ------ */
 @media (min-width: 1024px) {
   #hero2 {
