@@ -35,7 +35,7 @@
         }
 
         #section3-left{
-            background-color: brown;
+            background-color: #F6F6F6;
             padding: 16px;
             @include xxl{
                 grid-template-columns: 20% auto 16px;
@@ -45,7 +45,7 @@
             // }
         }
         #section3-right{
-            background-color: sandybrown;
+            background-color: #F6F6F6;
             padding: 16px;
             @include xxl{
                 grid-template-columns: 16px auto 20%;

@@ -554,7 +554,7 @@ footer > div {
   grid-area: section2-aside;
 }
 #section2 section #section2-left {
-  background: fuchsia;
+  background: #D6909F;
 }
 @media (min-width: 1440px) {
   #section2 section #section2-left {
@@ -562,7 +562,7 @@ footer > div {
   }
 }
 #section2 section #section2-right {
-  background: purple;
+  background: #F0C6CF;
 }
 @media (min-width: 1440px) {
   #section2 section #section2-right {
@@ -607,7 +607,7 @@ footer > div {
   margin-left: auto;
 }
 #section3 > div #section3-left {
-  background-color: brown;
+  background-color: #F6F6F6;
   padding: 16px;
 }
 @media (min-width: 1440px) {
@@ -616,7 +616,7 @@ footer > div {
   }
 }
 #section3 > div #section3-right {
-  background-color: sandybrown;
+  background-color: #F6F6F6;
   padding: 16px;
 }
 @media (min-width: 1440px) {
@@ -663,7 +663,7 @@ footer > div {
   width: 100%;
 }
 #section4 > div ul li section {
-  background: sandybrown;
+  background: #F6F6F6;
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". section4-content .";

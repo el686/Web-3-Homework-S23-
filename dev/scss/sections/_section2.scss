@@ -25,14 +25,14 @@
            }
         
            #section2-left{
-                background: fuchsia; 
+                background: #D6909F; 
                 @include xxl{
                     grid-template-columns: 20% auto 16px;
                 }
            }
 
            #section2-right{
-                background: purple; 
+                background: #F0C6CF; 
                 @include xxl{
                     grid-template-columns: 16 px auto 20%;
                 }
