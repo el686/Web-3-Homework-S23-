@@ -18,6 +18,7 @@
             display: grid;
             grid-template-columns: 16px auto 16px;
             grid-template-areas: ". section2-aside .";
+
             >div{
                 
                 grid-area: section2-aside;
@@ -25,17 +26,68 @@
            }
         
            #section2-left{
-                background: #D6909F; 
-                @include xxl{
-                    grid-template-columns: 20% auto 16px;
+            background-color: var(--pinkDark);                 
+            @include xxl{
+                    grid-template-columns: 30% auto 16px;
+                }
+                
+                h1{
+                    font-size: rme-calc(18);
+                    margin-bottom: 8px;
+                    color: var(--pinkLight);
+    
+                    @include xl{
+                        font-size: rme-calc(25);
+                        color: var(--pinkLight);
+                    }
+                }
+                h2{
+                    font-size: rme-calc(12);
+                    margin-bottom: 8px;
+                    color: var(--pinkDark2);
+    
+                    @include xl{
+                        font-size: rme-calc(16);
+                        color: var(--pinkDark2);
+                    }
+                }
+    
+                p{
+                    font-weight: 600;
+                    font-size: rme-calc(14);
+    
+                    @include xl{
+                        font-size: rme-calc(18);
+                    }
                 }
            }
 
            #section2-right{
-                background: #F0C6CF; 
+                background-color: var(--pinkLight); 
                 @include xxl{
                     grid-template-columns: 16 px auto 20%;
                 }
+                h3{
+                    font-weight: 400;
+                    font-size: rem-calc(16);
+                    color: var(--greenDark);
+                    margin-bottom: 8px;
+                    span{
+                        font-weight: 700;
+                    }
+                }
+                h4{
+                    font-weight: 400;
+                    font-size: rem-calc(16);
+                    color: var(--black);
+                    margin-bottom: 8px;
+                    span{
+                        font-weight: 700;
+                    }
+
+
+                }
+
            }
     }
 

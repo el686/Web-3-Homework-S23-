@@ -13,24 +13,56 @@
    }
    
     >div{
+        display: grid;
+        gap: 16px;
+
         @include md{
             grid-area: section3;
-
-            display: grid;
             grid-template-columns: 50% auto;
         }
+
+        
+
         @include lg{
             grid-template-columns: 50% auto;
         }
         .section3-content{
             padding: 16px;
-
+            align-items: center;
+            box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
             >div{
                 display: flex;
-
+                h1{
+                    font-size: rem-calc(22);
+                    font-weight: 400;
+    
+                    @include md{
+                        font-size: rem-calc(30);
+                    }
+                }
+                button{
+                    background-color: var(--greenMedium);
+                    color: var(--black);
+                }
+                
+                a{
+                    margin-top: 8px;
+                }
+                aside{
+                    margin-left: auto;
+                    width: 35%;
+    
+                    @include sm{
+                        width: 25%;
+                    }
+    
+                    @include xl{
+                        width: 20%;
+    
                 aside{
                     margin-left: auto;
                 }
+                
             }
         }
 
@@ -56,4 +88,5 @@
 
         }
     }
+}}
 }

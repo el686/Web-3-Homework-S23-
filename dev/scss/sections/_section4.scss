@@ -24,7 +24,7 @@
                 grid-template-areas: 
                 "n1 n1 n2 n2"
                 "n3 n3 n4 n4"
-                ".. n5 n5 ..";
+                ".. n5 n5 ..";  
                 gap:16px;
             }
 
@@ -34,7 +34,11 @@
                 "n1 n1 n2 n2 n3 n3"
                 ". n4 n4 n5 n5 .";
             }
-
+            h1{
+                @include md{
+                    grid-area: nt;
+                }
+            }
             li{
                 img{
                     width: 100%;
@@ -44,6 +48,10 @@
                         display: grid;
                         grid-template-columns: 16px auto 16px;
                         grid-template-areas: ". section4-content .";
+                        button{ 
+                            background-color: var(--Teal);
+                            color: var(--white)
+                        }
                     >div{
                         
                         grid-area: section4-content;
