@@ -493,34 +493,31 @@ header {
     grid-template-areas: "logo-nav";
   }
 }
-
-#logo-nav {
+header #logo-nav {
   grid-area: logo;
   display: flex;
   align-items: center;
 }
-
-#logo-nav img {
-  max-width: 100%;
-}
-
-#burger-container {
+header #burger-container {
   text-align: right;
   grid-area: burger;
   align-items: center;
   justify-content: flex-end;
 }
 @media (min-width: 1024px) {
-  #burger-container {
+  header #burger-container {
     display: none;
   }
 }
-
-button {
+header button {
   border: none;
   background-color: transparent;
   color: black;
   font-size: 1.25rem;
+}
+
+nav {
+  grid-area: nav;
 }
 
 /* =============
