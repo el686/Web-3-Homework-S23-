@@ -497,7 +497,6 @@ header #logo-nav {
   grid-area: logo;
   display: flex;
   align-items: center;
-  border: 1px solid #000;
 }
 header #burger-container {
   text-align: right;
