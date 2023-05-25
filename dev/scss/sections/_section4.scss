@@ -3,6 +3,8 @@
 ============= */
 
 #section4{
+    scroll-margin-top: 90px;
+
     @include md{
         display: grid;
         grid-template-columns: 16px auto 16px;
@@ -29,6 +31,8 @@
             }
 
             @include lg{
+                    scroll-margin-top: 100px;
+        
                 grid-template-columns: repeat(6, 1fr);
                 grid-template-areas: 
                 "n1 n1 n2 n2 n3 n3"

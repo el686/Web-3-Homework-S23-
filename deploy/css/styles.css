@@ -386,27 +386,9 @@ h1, h2, h3, h4, h5, p {
 /* =============
     Buttons
 ============= */
-.red-link:link, .red-link:visited {
-  background-color: var(--red);
-  color: white;
-  padding: 8px 16px;
-  display: inline-block;
-  transition: 0.25s;
-}
-.red-link:link:hover, .red-link:visited:hover {
-  background-color: var(--redDark);
-}
-
-.red-button {
-  background-color: var(--red);
-  color: white;
-  padding: 8px 16px;
-  display: inline-block;
-  transition: 0.25s;
-  cursor: pointer;
-}
-.red-button:hover {
-  background-color: var(--redDark);
+button {
+  padding: 0;
+  margin: 0;
 }
 
 /* =============
@@ -443,6 +425,55 @@ textarea {
 /* =============
     Navigation
 ============= */
+html {
+  scroll-behavior: smooth;
+}
+
+.show-menu {
+  display: block !important;
+}
+
+nav {
+  display: none;
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+nav ul li {
+  text-align: right;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    margin-left: 16px;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
+  font-family: "Open Sans", sans-serif;
+  display: inline-block;
+  color: black;
+  padding: 16px 0 16px;
+  font-weight: 500;
+}
+@media (min-width: 1024px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding: 24px 36px;
+    border: 1px solid var(--gray);
+    color: var(--gray);
+    border-radius: 6px;
+    transition: 0.25s;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+    background-color: var(--greyLight);
+    color: var(--white);
+  }
+}
+
 /* =============
     Header
 ============= */
@@ -450,14 +481,43 @@ header {
   display: grid;
   grid-template-columns: 50% auto;
   grid-template-areas: "logo burger" "nav nav";
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
 }
-header #logo {
+@media (min-width: 1024px) {
+  header {
+    grid-template-areas: "logo-nav";
+  }
+}
+header #logo-nav {
   grid-area: logo;
+  display: flex;
+  align-items: center;
+  border: 1px solid #000;
 }
 header #burger-container {
+  text-align: right;
   grid-area: burger;
+  align-items: center;
+  justify-content: flex-end;
 }
-header nav {
+@media (min-width: 1024px) {
+  header #burger-container {
+    display: none;
+  }
+}
+header button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 1.25rem;
+}
+
+nav {
   grid-area: nav;
 }
 
@@ -680,6 +740,9 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 /* =============
     Section2
 ============= */
+#section2 {
+  scroll-margin-top: 90px;
+}
 @media (min-width: 768px) {
   #section2 section {
     display: grid;
@@ -689,6 +752,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 @media (min-width: 1024px) {
   #section2 section {
     grid-template-columns: 50% auto;
+    scroll-margin-top: 100px;
   }
 }
 #section2 section aside {
@@ -768,6 +832,9 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 /* =============
     section3
 ============= */
+#section3 {
+  scroll-margin-top: 90px;
+}
 @media (min-width: 768px) {
   #section3 {
     display: grid;
@@ -793,64 +860,65 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 @media (min-width: 1024px) {
   #section3 > div {
     grid-template-columns: 50% auto;
+    scroll-margin-top: 100px;
   }
 }
-#section3 > div .section3-content {
+#section3 .section3-content {
   padding: 16px;
   align-items: center;
   box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.296793);
 }
-#section3 > div .section3-content > div {
+#section3 .section3-content > div {
   display: flex;
 }
-#section3 > div .section3-content > div h1 {
+#section3 .section3-content > div h1 {
   font-size: 1.375rem;
   font-weight: 400;
 }
 @media (min-width: 768px) {
-  #section3 > div .section3-content > div h1 {
+  #section3 .section3-content > div h1 {
     font-size: 1.875rem;
   }
 }
-#section3 > div .section3-content > div button {
+#section3 .section3-content > div button {
   background-color: var(--greenMedium);
   color: var(--black);
 }
-#section3 > div .section3-content > div a {
+#section3 .section3-content > div a {
   margin-top: 8px;
 }
-#section3 > div .section3-content > div aside {
+#section3 .section3-content > div aside {
   margin-left: auto;
   width: 35%;
 }
 @media (min-width: 576px) {
-  #section3 > div .section3-content > div aside {
+  #section3 .section3-content > div aside {
     width: 25%;
   }
 }
 @media (min-width: 1200px) {
-  #section3 > div .section3-content > div aside {
+  #section3 .section3-content > div aside {
     width: 20%;
   }
-  #section3 > div .section3-content > div aside aside {
+  #section3 .section3-content > div aside aside {
     margin-left: auto;
   }
 }
-#section3 > div .section3-content > div #section3-left {
+#section3 .section3-content > div #section3-left {
   background-color: #F6F6F6;
   padding: 16px;
 }
 @media (min-width: 1440px) {
-  #section3 > div .section3-content > div #section3-left {
+  #section3 .section3-content > div #section3-left {
     grid-template-columns: 20% auto 16px;
   }
 }
-#section3 > div .section3-content > div #section3-right {
+#section3 .section3-content > div #section3-right {
   background-color: #F6F6F6;
   padding: 16px;
 }
 @media (min-width: 1440px) {
-  #section3 > div .section3-content > div #section3-right {
+  #section3 .section3-content > div #section3-right {
     grid-template-columns: 16px auto 20%;
   }
 }
@@ -858,6 +926,9 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 /* =============
     section4
 ============= */
+#section4 {
+  scroll-margin-top: 90px;
+}
 @media (min-width: 768px) {
   #section4 {
     display: grid;
@@ -885,6 +956,7 @@ footer > div #f3 ul li a:link:hover, footer > div #f3 ul li a:link:active, foote
 }
 @media (min-width: 1024px) {
   #section4 > div ul {
+    scroll-margin-top: 100px;
     grid-template-columns: repeat(6, 1fr);
     grid-template-areas: "n1 n1 n2 n2 n3 n3" ". n4 n4 n5 n5 .";
   }
